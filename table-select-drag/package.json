@@ -1,0 +1,22 @@
+{
+  "name": "table-select-drag",
+  "version": "0.1.0",
+  "description": "为你的表格添加拖拉多选功能😀！",
+  "main": "table-select-drag.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhengzhoujiao/"
+  },
+  "keywords": [
+    "表格拖拽多选",
+    "window文件操作式表格多选",
+    "excel表格",
+    "鼠标拖拉多选",
+    "表格多选"
+  ],
+  "author": "01Jcoder",
+  "license": "MIT"
+}
