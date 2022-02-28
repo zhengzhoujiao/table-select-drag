@@ -1,6 +1,6 @@
 {
   "name": "table-select-drag",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "为你的表格添加拖拉多选功能😀！",
   "main": "table-select-drag.umd.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhengzhoujiao/"
+    "url": "https://github.com/zhengzhoujiao/table-select-drag"
   },
   "keywords": [
     "表格拖拽多选",

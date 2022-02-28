@@ -3937,15 +3937,18 @@ var web_dom_collections_iterator = __webpack_require__("ddb0");
 
         var scrolling = oDiv.getElementsByClassName('el-table__body-wrapper'); // 动态渲染选框
 
-        selDiv.style.left = Math.min(_x, startX) - left + scrolling[0].scrollLeft + 'px';
-        selDiv.style.top = Math.min(_y, startY) - top + scrolling[0].scrollTop + 'px';
-        selDiv.style.width = Math.abs(_x - startX) + 'px';
-        selDiv.style.height = Math.abs(_y - startY) + 'px'; // 记录选框位置
+        var raf = requestAnimationFrame(function () {
+          selDiv.style.left = Math.min(_x, startX) - left + scrolling[0].scrollLeft + 'px';
+          selDiv.style.top = Math.min(_y, startY) - top + scrolling[0].scrollTop + 'px';
+          selDiv.style.width = Math.abs(_x - startX) + 'px';
+          selDiv.style.height = Math.abs(_y - startY) + 'px'; // 记录选框位置
 
-        _l = selDiv.offsetLeft;
-        _t = selDiv.offsetTop;
-        _w = selDiv.offsetWidth;
-        _h = selDiv.offsetHeight;
+          _l = selDiv.offsetLeft;
+          _t = selDiv.offsetTop;
+          _w = selDiv.offsetWidth;
+          _h = selDiv.offsetHeight;
+          cancelAnimationFrame(raf);
+        });
         /*
         * 动态对比选框与每一个tr位置，进而控制每一个tr的选中状态以及多选列表
         * 节流的形式处理逻辑、精细化控制事件执行间隔，防止程序崩溃、渲染卡顿。

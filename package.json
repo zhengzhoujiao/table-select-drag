@@ -1,10 +1,10 @@
 {
   "name": "table-select-drag",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib ./src/package/index.js --name table-select-drag --dest table-select-drag"
+    "build": "vue-cli-service build --no-clean --target lib ./src/package/index.js --name table-select-drag --dest table-select-drag"
   },
   "dependencies": {
     "core-js": "^3.6.5",
